@@ -1,0 +1,18 @@
+public class Solution {
+
+static int[] jobOffers(int[] scores, int[] lowerLimits, int[]
+upperLimits) {
+
+int resultArrLength = lowerLimits.length;
+int resultArray[] = new int[resultArrLength];
+for(int i=0; i<lowerlimits.length; i++)
+
+for(int j=0;j<scores.length;j++)
+{
+  if(scores[j]<=lowerLimits[i] && scores[j]>=upperLimits[i])
+     resultArray[i]++;
+}
+return resultArray;
+}
+
+}

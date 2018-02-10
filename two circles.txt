@@ -1,0 +1,31 @@
+
+
+import java.io.*;
+ 
+public class Solution {
+     
+    static String[] circles(String[] info) {
+    {   
+	    for(int i= 1;i<info.length;i++)
+		{
+		  
+        int distSq = (info[i][1] - info[i][4]) * (info[i][1] - info[i][4]) +
+                     (info[i][2] - info[i][5]) * (info[i][2] - info[i][5]);
+        int radSumSq = (info[i][3] + info[i][6]) * (info[i][3] + info[i][6]);
+		int radSum =  info[i][3] + info[i][6] ;
+        if (distSq == radSumSq)
+            System.out.println ( "Touching");
+        else if (distSq > radSumSq)
+            System.out.println ( "DisjointOutside");
+	    else if (distSq > radSumSq)
+            System.out.println ( "DisjointInside");
+		elseif	(distSq == radSum)
+		System.out.println ( "Concentric");
+        else
+            System.out.println ( "intersecting");
+		}
+    }
+	
+ 
+    
+}
