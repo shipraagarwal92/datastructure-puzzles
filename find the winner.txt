@@ -1,0 +1,36 @@
+
+
+public class Solution {
+
+static String winner(int[] andrea, int[] maria, String s) {
+int mariawin=0;
+int andreawin = 0;
+if (s=='Even')
+  {
+   for(int i=0;i<andrea.length;i+1)
+     {
+	   if((andrea[i]-maria[i]) > 0)
+	        andreawin++;
+			if(andrea[i]-maria[i] < 0)
+	        mariawin++;
+	 }
+  }
+
+  if (s=='Odd')
+  {
+   for(int i=1;i<andrea.length;i+1)
+     {
+	   if((andrea[i]-maria[i]) > 0)
+	        andreawin++;
+			if(andrea[i]-maria[i] < 0)
+	        mariawin++;
+	 }
+  }
+  
+  if((andreawin - mariawin)>0)
+  System.out.println ( "andrea");
+  
+  if((andreawin - mariawin)<0)
+  System.out.println ( "maria");
+}
+}
